@@ -26,6 +26,7 @@ p {
     align-items: center;
     text-align: center;
     margin: auto;
+    margin-top: 100px;
     padding: auto;
 }
 
@@ -57,6 +58,7 @@ p {
     color: white;
     padding: 10px 50px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     margin: auto;
     display: block;
@@ -70,6 +72,7 @@ p {
     color: white;
     padding: 10px 50px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     margin: auto;
     display: block;
@@ -78,17 +81,32 @@ p {
 
 }
 
-
 .grassButton {
     background-color: lightgreen;
     color: white;
     padding: 10px 50px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     margin: auto;
     display: block;
     border-radius: 5px;
     cursor: pointer;
+
+}
+
+.backButton {
+    background-color: lightgrey;
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+
 
 }
 
@@ -99,5 +117,6 @@ p {
     width: 50px;
     height: auto;
 }
+
 
 /* Path: app.js */
