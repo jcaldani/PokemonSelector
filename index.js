@@ -2,16 +2,10 @@ const fireButton = document.querySelector('.fireButton');
 const waterButton = document.querySelector('.waterButton');
 const grassButton = document.querySelector('.grassButton');
 const textCycle = ['Pick me!', 'No, pick me!', 'Choose me!'];
-const backButton = document.querySelector('.backButton');
 
 function switchToPage(pageUrl) {
     window.location.href = pageUrl;
   };
-
-/// back button for everyone
-backButton.addEventListener('click', () => {
-    switchToPage('index.html');
-});
 
 /// fire button
 fireButton.addEventListener('click', () => {
@@ -36,7 +30,6 @@ fireButton.addEventListener('mouseout', () => {
 waterButton.addEventListener('mouseover', () => {
     waterButton.style.backgroundColor = 'blue';
     waterButton.textContent = getRandomInt();
-
 });
 
 waterButton.addEventListener('mouseout', () => { 
