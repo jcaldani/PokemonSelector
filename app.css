@@ -56,6 +56,8 @@ p {
 .fireButton {
     background-color: orange;
     color: white;
+    width: 200px;
+    height: 50px;
     padding: 10px 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -67,9 +69,24 @@ p {
 
 }
 
+.cyndaDesc {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+
+.fireButton:hover + .cyndaDesc {
+    display: block;
+    transition: all 1s ease;
+}
+
 .waterButton {
     background-color: lightblue;
     color: white;
+    width: 200px;
+    height: 50px;
     padding: 10px 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +101,8 @@ p {
 .grassButton {
     background-color: lightgreen;
     color: white;
+    width: 200px;
+    height: 50px;
     padding: 10px 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -98,6 +117,8 @@ p {
 .backButton {
     background-color: lightgrey;
     color: black;
+    width: 200px;
+    height: 50px;
     padding: 10px 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;

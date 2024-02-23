@@ -1,10 +1,15 @@
-const backButton = document.querySelector('.backButton'); //// ????
+/*  const backButton = document.querySelector('.backButton'); //// ????
 
-function switchToPage(pageUrl) {
-    window.location.href = pageUrl;
-  };
+  function switchToPage(pageUrl) {
+      window.location.href = pageUrl;
+    };
 
-/// back button for everyone
+  /// back button for everyone
+  backButton.addEventListener('click', () => {
+      switchToPage('index.html');
+  }); */
+
+const backButton = document.querySelector('.backButton');
 backButton.addEventListener('click', () => {
-    switchToPage('index.html');
+    window.location.href = 'index.html';
 });

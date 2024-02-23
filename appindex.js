@@ -3,13 +3,10 @@ const waterButton = document.querySelector('.waterButton');
 const grassButton = document.querySelector('.grassButton');
 const textCycle = ['Pick me!', 'No, pick me!', 'Choose me!'];
 
-function switchToPage(pageUrl) {
-    window.location.href = pageUrl;
-  };
-
 /// fire button
-fireButton.addEventListener('click', () => {
-    switchToPage('cyndadex.html');
+
+fireButton.addEventListener('click', () => {   
+    window.location.href = 'cyndadex.html';
 });
 
 fireButton.addEventListener('mouseover', () => {
@@ -22,8 +19,7 @@ fireButton.addEventListener('mouseout', () => {
         fireButton.style.backgroundColor = 'orange';
         fireButton.textContent = 'Cyndaquil';
     }, "1000");  
-});
-
+}); 
 
 /// water button
 
@@ -38,6 +34,10 @@ waterButton.addEventListener('mouseout', () => {
         waterButton.style.backgroundColor = 'lightblue';
         waterButton.textContent = 'Totodile';
     }, "1000");  
+});
+
+waterButton.addEventListener('click', () => {   
+    window.location.href = 'totodex.html';
 });
 
 //// grass button
@@ -56,9 +56,12 @@ grassButton.addEventListener('mouseout', () => {
     }, "1000");  
 });
 
+grassButton.addEventListener('click', () => {   
+    window.location.href = 'chikodex.html';
+});
+
+
 /// cycle through button text 
-
-
 
 function getRandomInt(){
     const textIndex = Math.floor(Math.random() * textCycle.length);
