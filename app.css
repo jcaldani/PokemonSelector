@@ -26,93 +26,133 @@ p {
     align-items: center;
     text-align: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: auto;
+    
 }
 
 .container {
-    display: inline-block;
-    padding: auto;
-    margin: auto;
+    display: inline-flex;
+    flex-flow: wrap;
+    gap: 20px;
 }
 
 .pkmnimg {
     width: 250px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     height: auto;
-    margin: 10px;
-    padding: 35px;
-    display: block;
 }
 
-.box {
-    width: 300px;
-    height: 300px;
-}
-
-.pokemon {
-    display: inline-block;
-}
 
 .fireButton {
     background-color: orange;
     color: white;
     width: 200px;
     height: 50px;
-    padding: 10px 50px;
-    text-align: center;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    margin: auto;
-    display: block;
     border-radius: 5px;
     cursor: pointer;
+    justify-content: center;
+    align-content: center;
 
 }
 
-.cyndaDesc {
+.fireIcon {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-    padding: 10px;
     position: absolute;
+    background-color: rgb(218, 87, 0);
+    border-radius: 50%;
+    margin-top: 15px; 
+    margin-left: 20px;
     display: none;
 }
 
-.fireButton:hover + .cyndaDesc {
-    display: block;
-    transition: all 1s ease;
+.fireButton:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    background-color: rgb(223, 63, 0);
 }
+
+.fireButton:hover + .fireIcon {
+    display: inline-flex;
+} 
 
 .waterButton {
     background-color: lightblue;
     color: white;
     width: 200px;
     height: 50px;
-    padding: 10px 50px;
-    text-align: center;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    margin: auto;
-    display: block;
     border-radius: 5px;
     cursor: pointer;
+    justify-content: center;
+    align-content: center;
 
 }
+
+.waterIcon {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 34, 182);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 15px; 
+    margin-left: 20px;
+    display: none;
+} 
+
+.waterButton:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    background-color: rgb(18, 78, 206);
+}
+
+.waterButton:hover + .waterIcon {
+    display: inline-flex;
+} 
 
 .grassButton {
     background-color: lightgreen;
     color: white;
     width: 200px;
     height: 50px;
-    padding: 10px 50px;
-    text-align: center;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    margin: auto;
-    display: block;
     border-radius: 5px;
     cursor: pointer;
+    justify-content: center;
+    align-content: center;
 
 }
+
+.grassIcon {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 184, 0);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 15px; 
+    margin-left: 20px;
+    display: none;
+}
+
+.grassButton:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    box-shadow: 13px 13px 14px 0px rgba(115,115,115,0.49);
+    background-color: rgb(64, 136, 64);
+}
+
+.grassButton:hover + .grassIcon {
+    display: inline-flex;
+} 
 
 .backButton {
     background-color: lightgrey;

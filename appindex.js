@@ -1,7 +1,7 @@
 const fireButton = document.querySelector('.fireButton');
 const waterButton = document.querySelector('.waterButton');
 const grassButton = document.querySelector('.grassButton');
-const textCycle = ['Pick me!', 'No, pick me!', 'Choose me!'];
+const textCycle = ['Pick me!', 'No, pick me!', 'Choose me!', 'Hi!', ':D', ':3'];
 
 /// fire button
 
@@ -10,13 +10,13 @@ fireButton.addEventListener('click', () => {
 });
 
 fireButton.addEventListener('mouseover', () => {
-    fireButton.style.backgroundColor = 'red';
+    // fireButton.style.backgroundColor = 'rgb(218, 87, 0)';
     fireButton.textContent = getRandomInt();
 });
 
 fireButton.addEventListener('mouseout', () => { 
     setTimeout(() => {
-        fireButton.style.backgroundColor = 'orange';
+        // fireButton.style.backgroundColor = 'orange';
         fireButton.textContent = 'Cyndaquil';
     }, "1000");  
 }); 
@@ -24,14 +24,14 @@ fireButton.addEventListener('mouseout', () => {
 /// water button
 
 waterButton.addEventListener('mouseover', () => {
-    waterButton.style.backgroundColor = 'blue';
+    // waterButton.style.backgroundColor = 'rgb(34, 34, 182)';
     waterButton.textContent = getRandomInt();
 });
 
 waterButton.addEventListener('mouseout', () => { 
     
     setTimeout(() => {
-        waterButton.style.backgroundColor = 'lightblue';
+        // waterButton.style.backgroundColor = 'lightblue';
         waterButton.textContent = 'Totodile';
     }, "1000");  
 });
@@ -43,7 +43,7 @@ waterButton.addEventListener('click', () => {
 //// grass button
 
 grassButton.addEventListener('mouseover', () => {
-    grassButton.style.backgroundColor = 'green';
+    // grassButton.style.backgroundColor = 'rgb(21, 155, 21)';
     grassButton.textContent = getRandomInt();
 
 });
@@ -51,7 +51,7 @@ grassButton.addEventListener('mouseover', () => {
 grassButton.addEventListener('mouseout', () => { 
     
     setTimeout(() => {
-        grassButton.style.backgroundColor = 'lightgreen';
+        // grassButton.style.backgroundColor = 'lightgreen';
         grassButton.textContent = 'Chikorita';
     }, "1000");  
 });
