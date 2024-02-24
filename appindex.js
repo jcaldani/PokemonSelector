@@ -16,7 +16,7 @@ fireButton.addEventListener('mouseover', () => {
 fireButton.addEventListener('mouseout', () => { 
     setTimeout(() => {
         // fireButton.style.backgroundColor = 'orange';
-        selecttxt.textContent = "Press the corresponding button to select";
+        selecttxt.textContent = "Press a button to select";
     }, "1000");  
 }); 
 
@@ -36,7 +36,7 @@ waterButton.addEventListener('mouseout', () => {
     
     setTimeout(() => {
         // waterButton.style.backgroundColor = 'lightblue';
-        selecttxt.textContent = "Press the corresponding button to select";
+        selecttxt.textContent = "Press a button to select";
     }, "1000");  
 });
 
@@ -57,7 +57,7 @@ grassButton.addEventListener('mouseout', () => {
     
     setTimeout(() => {
         // grassButton.style.backgroundColor = 'lightgreen';
-        selecttxt.textContent = "Press the corresponding button to select";
+        selecttxt.textContent = "Press a button to select";
     }, "1000");  
 });
 
