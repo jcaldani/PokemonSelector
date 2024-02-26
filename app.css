@@ -1,27 +1,12 @@
-body {
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
+@font-face {
+    font-family: ka1;
+    src: url('fonts/ka1.ttf')format('truetype');
+  }
+
+@font-face {
+  font-family: DisposableDroid;
+  src: url('fonts/DisposableDroidBB.ttf')format('truetype');
 }
-
-
-.startertxt {
-	font-style: italic;
-    font-size: 50px;
-    margin-bottom: 3px;
-	text-transform: uppercase;
-	color: transparent;
-	-webkit-text-stroke: #000000;
-	-webkit-text-stroke-width: 2px;
-	text-shadow: 2px 2px 10px rgb(196, 99, 99);
-	transition: all 0.5s ease-in-out;
-	text-align: center;
-    letter-spacing: 0.1em;
-	
-	animation: 1s linear 0s infinite alternate startertxt;
-} 
 
 @keyframes startertxt {
     from {
@@ -29,13 +14,42 @@ body {
     }
   }
 
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 100%;
+}
+
+.startertxt {
+    font-family: "ka1";
+    font-size: 50px;
+    margin-bottom: 3px;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: #000000;
+	-webkit-text-stroke-width: 2px;
+	/* text-shadow: 2px 2px 10px rgb(196, 99, 99); */
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+    letter-spacing: 0.1em;
+	
+	animation: 1s linear 0s infinite alternate startertxt;
+} 
+
 .selecttxt {
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "DisposableDroid";
     padding: 5px;
 	text-transform: uppercase;
-	color: rgb(196, 99, 99);
+	color: rgb(0, 0, 0);
 	-webkit-text-stroke: rgb(0, 0, 0);
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 0.5px;
 	/* text-shadow: 1px 1px 5px rgb(188, 196, 124); */
 	text-align: center;
 	letter-spacing: 0.2em;
@@ -196,12 +210,12 @@ body {
 }
 
 .poketxt {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: "DisposableDroid";
     text-align: center;
     color: rgba(0, 0, 0, 0.699);
     
 }
 
-/* Path: app.js */
 
 

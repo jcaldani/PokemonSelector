@@ -14,10 +14,9 @@ fireButton.addEventListener('mouseover', () => {
 });
 
 fireButton.addEventListener('mouseout', () => { 
-    setTimeout(() => {
         // fireButton.style.backgroundColor = 'orange';
         selecttxt.textContent = "Press a button to select";
-    }, "1000");  
+    
 }); 
 
 fireButton.addEventListener('click', () => {   
@@ -32,12 +31,8 @@ waterButton.addEventListener('mouseover', () => {
     selecttxt.textContent = 'Pick Totodile?'
 });
 
-waterButton.addEventListener('mouseout', () => { 
-    
-    setTimeout(() => {
-        // waterButton.style.backgroundColor = 'lightblue';
-        selecttxt.textContent = "Press a button to select";
-    }, "1000");  
+waterButton.addEventListener('mouseout', () => {    
+    selecttxt.textContent = "Press a button to select";
 });
 
 waterButton.addEventListener('click', () => {   
@@ -54,11 +49,9 @@ grassButton.addEventListener('mouseover', () => {
 });
 
 grassButton.addEventListener('mouseout', () => { 
-    
-    setTimeout(() => {
-        // grassButton.style.backgroundColor = 'lightgreen';
-        selecttxt.textContent = "Press a button to select";
-    }, "1000");  
+    // grassButton.style.backgroundColor = 'lightgreen';
+    selecttxt.textContent = "Press a button to select";
+  
 });
 
 grassButton.addEventListener('click', () => {   
@@ -67,12 +60,12 @@ grassButton.addEventListener('click', () => {
 
 
 /// cycle through button text 
-
+/*
 function getRandomInt(){
     const textIndex = Math.floor(Math.random() * textCycle.length);
     return textCycle[textIndex];
 };
-
+*/ 
 
 
 
