@@ -7,19 +7,48 @@
   </head>
 
   <body>
-  
     <div id="title">
       <div class="image-text-container">
         <img class="pokeball" src="images/pokeball.png">
-        <h1>You've selected Cyndaquil!</h1>
+        <h1 class="startertxt">Pick your starter</h1>
       </div>
-      <p>Congratulations, have fun with your new buddy.</p>
+      <h2 class="selecttxt">You've selected Cyndaquil</h2>
     </div>
+  </div>
 
     <div class="container">
         <div id="cyndaquil" class="pokemon">
            <div class="box"><img class="pkmnimg" src="images/cyndaquil.png"></div>
-            <button class="backButton" type="button">Go back?</button>
+                 
+                  <!-- Trigger/Open The Modal -->
+                  <button id="modalBtn" class="modalBtn"><text class="poketxt">Pokedex</text></button>
+
+                  <!-- The Modal -->
+                  <div id="pokeModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                            
+                              <div class="evolutionBlock"><text class="evotxt">It flares flames from its back to protect itself. 
+                                The fire burns vigorously if the Pokémon is angry. 
+                              When it is tired, it sputters with incomplete combustion.<br></text>
+                            
+                                    <text class="arrow">→</text> 
+                                        <figure> 
+                                          <img class="evoImg" src="images/quilava.png">
+                                          <figcaption>Evolves to Quilava</figcaption>
+                                        </figure> 
+                                    <figure> 
+                                          <img class="evoImg" src="images/typhlosion.png">
+                                          <figcaption>Evolves to Typhlosion</figcaption>
+                                    </figure> 
+                             </div>
+                           
+                    </div>
+                  </div> 
+
+            <button class="backButton" type="button"><text class="poketxt">Go back?</text></button>
         </div>
     </div>
 

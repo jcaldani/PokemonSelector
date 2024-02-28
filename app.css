@@ -38,14 +38,13 @@ body {
 	transition: all 0.5s ease-in-out;
 	text-align: center;
     letter-spacing: 0.1em;
-	
 	animation: 1s linear 0s infinite alternate startertxt;
 } 
 
 .selecttxt {
     font-size: 30px;
     font-family: "DisposableDroid";
-    padding: 5px;
+    padding-top: 5px;
 	text-transform: uppercase;
 	color: rgb(0, 0, 0);
 	-webkit-text-stroke: rgb(0, 0, 0);
@@ -127,9 +126,20 @@ body {
 
 }
 
+.waterButton:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
+    box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
+    background-color: rgb(56, 102, 202);
+}
+
+.waterButton:hover + .waterIcon {
+    display: inline-flex;
+} 
+
 .waterIcon {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(34, 34, 182);
+    background-color: rgb(56, 102, 202);
     border-radius: 50%;
     position: absolute;
     margin-top: 15px; 
@@ -138,16 +148,6 @@ body {
     animation: 1s linear 0s infinite alternate startertxt;
 } 
 
-.waterButton:hover {
-    -webkit-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
-    -moz-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
-    box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
-    background-color: rgb(18, 78, 206);
-}
-
-.waterButton:hover + .waterIcon {
-    display: inline-flex;
-} 
 
 .grassButton {
     background-color: lightgreen;
@@ -161,9 +161,20 @@ body {
 
 }
 
+.grassButton:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    background-color: rgb(92, 233, 92);
+}
+
+.grassButton:hover + .grassIcon {
+    display: inline-flex;
+} 
+
 .grassIcon {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(64, 136, 64);
+    background-color: rgb(92, 233, 92);
     border-radius: 50%;
     position: absolute;
     margin-top: 15px; 
@@ -173,31 +184,22 @@ body {
 
 }
 
-.grassButton:hover {
+.backButton {
+    background-color: rgb(158, 158, 158);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+}
+
+.backButton:hover {
     -webkit-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
     -moz-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
     box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
-    background-color: rgb(64, 136, 64);
-}
-
-.grassButton:hover + .grassIcon {
-    display: inline-flex;
-} 
-
-.backButton {
-    background-color: lightgrey;
-    color: black;
-    width: 200px;
-    height: 50px;
-    padding: 10px 50px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    margin: auto;
-    display: block;
-    border-radius: 5px;
-    cursor: pointer;
-
+    background-color: rgb(180, 180, 180);
 }
 
 .pokeball {
@@ -217,5 +219,88 @@ body {
     
 }
 
+ /* The Modal (background) */
+ .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    border-width: 30px;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 5px solid #000000c5;
+    width: 70%; 
+    display: flex;
+  }
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+.modalBtn {
+    background-color: rgb(158, 158, 158);
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.modalBtn:hover {
+    -webkit-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    -moz-box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    box-shadow: 13px 13px 14px 0px rgba(40, 88, 52, 0.49);
+    background-color: rgb(180, 180, 180);
+}
 
 
+.evoImg {
+    width: 150px;
+    height: auto;
+}
+
+.evolutionBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: auto;
+}
+
+.evotxt {
+    font-size: 30px;
+    font-family: "DisposableDroid";
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.arrow {
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.473);
+    margin: 20px;
+    padding: 20px;
+}
