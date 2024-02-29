@@ -7,18 +7,52 @@
   </head>
 
   <body>
-  
     <div id="title">
       <div class="image-text-container">
-        <img class="pokeball" src="images/pokeball.png">
         <h1 class="startertxt">Pick your starter</h1>
       </div>
       <h2 class="selecttxt">You've selected Totodile</h2>
     </div>
+  </div>
 
     <div class="container">
-        <div id="cyndaquil" class="pokemon">
-            <div class="box"><img id="totoimg" class="pkmnimg" src="images/totodile.png"></div>
+        <div id="totodile" class="pokemon">
+           <div class="box"><img class="pkmnimg" src="images/totodile.png"></div>
+                 
+                  <button id="modalBtn" class="modalBtn"><text class="poketxt">Pokedex</text></button>
+
+                  <div id="pokeModal" class="modal">
+                    
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                              <div class="evolutionBlock"><text class="evotxt">Despite its small body, Totodile's jaws are very powerful. 
+                                While it may think it is just playfully nipping, 
+                                its bite has enough strength to cause serious injury.<br></text>
+
+                                    <figure> 
+                                          <img class="evoImg" src="images/totodile.png">
+                                          <figcaption><text class="evotxt">Totodile</text></figcaption>
+                                    </figure> 
+                                    
+                                      <text class="arrow">→</text> 
+                                      
+                                    <figure> 
+                                          <img class="evoImg" src="images/croconaw.png">
+                                          <figcaption><text class="evotxt">Croconaw</text></figcaption>
+                                    </figure> 
+                                  
+                                          <text class="arrow">→</text> 
+                                      
+                                    <figure> 
+                                          <img class="evoImg" src="images/feraligatr.png">
+                                          <figcaption><text class="evotxt">Feraligatr</text></figcaption>
+                                    </figure> 
+
+                             </div>
+                           
+                    </div>
+                  </div> 
+
             <button class="backButton" type="button"><text class="poketxt">Go back?</text></button>
         </div>
     </div>

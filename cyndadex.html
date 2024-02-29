@@ -9,7 +9,6 @@
   <body>
     <div id="title">
       <div class="image-text-container">
-        <img class="pokeball" src="images/pokeball.png">
         <h1 class="startertxt">Pick your starter</h1>
       </div>
       <h2 class="selecttxt">You've selected Cyndaquil</h2>
@@ -20,29 +19,37 @@
         <div id="cyndaquil" class="pokemon">
            <div class="box"><img class="pkmnimg" src="images/cyndaquil.png"></div>
                  
-                  <!-- Trigger/Open The Modal -->
                   <button id="modalBtn" class="modalBtn"><text class="poketxt">Pokedex</text></button>
 
-                  <!-- The Modal -->
                   <div id="pokeModal" class="modal">
 
-                    <!-- Modal content -->
                     <div class="modal-content">
+                      
                       <span class="close">&times;</span>
-                            
+                              
                               <div class="evolutionBlock"><text class="evotxt">It flares flames from its back to protect itself. 
                                 The fire burns vigorously if the Pokémon is angry. 
                               When it is tired, it sputters with incomplete combustion.<br></text>
-                            
-                                    <text class="arrow">→</text> 
-                                        <figure> 
+
+                                    <figure> 
+                                          <img class="evoImg" src="images/cyndaquil.png">
+                                          <figcaption><text class="evotxt">Cyndaquil</text></figcaption>
+                                    </figure> 
+                                    
+                                      <text class="arrow">→</text> 
+                                      
+                                    <figure> 
                                           <img class="evoImg" src="images/quilava.png">
-                                          <figcaption>Evolves to Quilava</figcaption>
-                                        </figure> 
+                                          <figcaption><text class="evotxt">Quilava</text></figcaption>
+                                    </figure> 
+                                  
+                                          <text class="arrow">→</text> 
+                                      
                                     <figure> 
                                           <img class="evoImg" src="images/typhlosion.png">
-                                          <figcaption>Evolves to Typhlosion</figcaption>
+                                          <figcaption><text class="evotxt">Typhlosion</text></figcaption>
                                     </figure> 
+
                              </div>
                            
                     </div>

@@ -9,15 +9,50 @@
   <body>
     <div id="title">
       <div class="image-text-container">
-        <img class="pokeball" src="images/pokeball.png">
         <h1 class="startertxt">Pick your starter</h1>
       </div>
       <h2 class="selecttxt">You've selected Chikorita</h2>
     </div>
+  </div>
 
     <div class="container">
-        <div id="cyndaquil" class="pokemon">
-            <div class="box"><img id="chikoimg" class="pkmnimg" src="images/chikorita.png"></div>
+        <div id="chikorita" class="pokemon">
+           <div class="box"><img class="pkmnimg" src="images/chikorita.png"></div>
+                 
+                  <button id="modalBtn" class="modalBtn"><text class="poketxt">Pokedex</text></button>
+
+                  <div id="pokeModal" class="modal">
+
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                              <div class="evolutionBlock"><text class="evotxt">It waves its leaf around to keep foes at bay. 
+                                However, a sweet fragrance also wafts from the leaf, 
+                                creating a friendly atmosphere that becalms the battlers.<br></text>
+
+                                    <figure> 
+                                          <img class="evoImg" src="images/chikorita.png">
+                                          <figcaption><text class="evotxt">Chikorita</text></figcaption>
+                                    </figure> 
+                                    
+                                      <text class="arrow">→</text> 
+                                      
+                                    <figure> 
+                                          <img class="evoImg" src="images/bayleef.png">
+                                          <figcaption><text class="evotxt">Bayleef</text></figcaption>
+                                    </figure> 
+                                  
+                                          <text class="arrow">→</text> 
+                                      
+                                    <figure> 
+                                          <img class="evoImg" src="images/meganium.png">
+                                          <figcaption><text class="evotxt">Meganium</text></figcaption>
+                                    </figure> 
+
+                             </div>
+                           
+                    </div>
+                  </div> 
+
             <button class="backButton" type="button"><text class="poketxt">Go back?</text></button>
         </div>
     </div>

@@ -14,13 +14,19 @@
     }
   }
 
+@keyframes arrow {
+    from {
+      transform: translateX(5px);
+    }
+}
+
 body {
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background-image: url('images/background.png');
+    background-image: url('images/background2.png');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: 100%;
@@ -73,18 +79,20 @@ body {
 
 .pkmnimg {
     width: 250px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
     height: auto;
+    
 }
 
+/* fire */
 
 .fireButton {
     background-color: orange;
     width: 200px;
     height: 50px;
-    margin: auto;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
@@ -95,7 +103,7 @@ body {
 .fireIcon {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    background-color: rgb(218, 87, 0);
+    background-color: rgb(243, 90, 30);
     border-radius: 50%;
     margin-top: 15px; 
     margin-left: 20px;
@@ -107,18 +115,20 @@ body {
     -webkit-box-shadow: 13px 13px 14px 0px rgba(80, 25, 25, 0.49);
     -moz-box-shadow: 13px 13px 14px 0px rgba(80, 25, 25, 0.49);
     box-shadow: 13px 13px 14px 0px rgba(80, 25, 25, 0.49);
-    background-color: rgb(223, 63, 0);
+    background-color: rgb(243, 90, 30);
 }
 
 .fireButton:hover + .fireIcon {
     display: inline-flex;
 } 
 
+/* water */
+
 .waterButton {
     background-color: lightblue;
     width: 200px;
     height: 50px;
-    margin: auto;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
@@ -130,7 +140,7 @@ body {
     -webkit-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
     -moz-box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
     box-shadow: 13px 13px 14px 0px rgba(42, 39, 90, 0.49);
-    background-color: rgb(56, 102, 202);
+    background-color: rgb(73, 122, 226);
 }
 
 .waterButton:hover + .waterIcon {
@@ -139,7 +149,7 @@ body {
 
 .waterIcon {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(56, 102, 202);
+    background-color: rgb(73, 122, 226);
     border-radius: 50%;
     position: absolute;
     margin-top: 15px; 
@@ -148,12 +158,13 @@ body {
     animation: 1s linear 0s infinite alternate startertxt;
 } 
 
+/* grass */
 
 .grassButton {
     background-color: lightgreen;
     width: 200px;
     height: 50px;
-    margin: auto;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
@@ -184,15 +195,20 @@ body {
 
 }
 
+/* back button */
+
 .backButton {
     background-color: rgb(158, 158, 158);
     width: 200px;
     height: 50px;
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
     align-content: center;
+
 }
 
 .backButton:hover {
@@ -202,14 +218,6 @@ body {
     background-color: rgb(180, 180, 180);
 }
 
-.pokeball {
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    width: 50px;
-    height: auto;
-    display: none;
-}
 
 .poketxt {
     font-size: 30px;
@@ -219,7 +227,8 @@ body {
     
 }
 
- /* The Modal (background) */
+/* modal */
+
  .modal {
     display: none; 
     position: fixed; 
@@ -239,7 +248,7 @@ body {
     margin: 15% auto; 
     padding: 20px;
     border: 5px solid #000000c5;
-    width: 70%; 
+    width: 95%; 
     display: flex;
   }
   
@@ -261,7 +270,9 @@ body {
     background-color: rgb(158, 158, 158);
     width: 200px;
     height: 50px;
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     border-radius: 5px;
     justify-content: center;
     align-content: center;
@@ -279,6 +290,9 @@ body {
 .evoImg {
     width: 150px;
     height: auto;
+    margin: 5px;
+    padding: 5px;
+    
 }
 
 .evolutionBlock {
@@ -300,7 +314,9 @@ body {
 
 .arrow {
     font-size: 70px;
-    color: rgba(0, 0, 0, 0.473);
+    color: rgb(0, 0, 0);
     margin: 20px;
     padding: 20px;
+    animation: 0.5s linear 0s infinite alternate arrow;
 }
+
